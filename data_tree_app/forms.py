@@ -10,3 +10,6 @@ class FileForm(forms.Form):
     isFile = forms.BooleanField(required=False)
     parent = TreeNodeChoiceField(queryset=File.objects.all())
     name = forms.CharField(max_length=60)
+
+
+#Create page for form, view for that and submission of form
